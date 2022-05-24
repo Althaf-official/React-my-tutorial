@@ -1,9 +1,12 @@
-import React from 'react'
+import About from "./Container/About"
+import Profile from "./Container/Profile"
+
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hello world s</h1>
+     <About></About>
+     <Profile></Profile>
     </div>
   )
 }
