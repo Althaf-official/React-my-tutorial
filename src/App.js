@@ -17,6 +17,7 @@ function App() {
     <div className='App'>
     <button onClick={()=>setState('about')} >About</button>
     <button onClick={()=>setState('profile')}>Profile</button>
+    {component}
     </div>
   )
 }
