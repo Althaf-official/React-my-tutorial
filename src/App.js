@@ -1,21 +1,26 @@
 import About from "./Container/About"
 import Profile from "./Container/Profile"
-import {useState} from 'react'
-import {BrowserRouter as Router,Route} from 'react-router-dom'//route means when we click on something where should be it have to go we are defining thats called routing
+import { useState } from 'react'
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
 function App() {
-  const[state,setState] =useState('')
-  
+  const [state, setState] = useState('')
+
   return (
     <div className='App'>
-    <button onClick={()=>setState('about')} >About</button>
-    <button onClick={()=>setState('profile')}>Profile</button>
-    <Router>
-      
+      <button onClick={() => setState('about')} >About</button>
+      <button onClick={() => setState('profile')}>Profile</button>
+
+      <Router>
+        <Routes>
+          <Route path="/about" element={<About />}/>
+            <Route path="/profile" element={<Profile />}/>
+      </Routes>
     </Router>
 
-    </div>
-  )
+
+        </div>
+        )
 }
 
-export default App 
+        export default App 
