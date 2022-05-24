@@ -9,6 +9,8 @@ function App() {
   return (
     <div className='App'>
       <Router>
+
+        
         <Link to='/about'>About Page</Link>
         <Link to='/profile'>Profile page</Link>
         <Routes>
