@@ -1,13 +1,14 @@
 import About from "./Container/About"
 import Profile from "./Container/Profile"
 import {useState} from 'react'
+import {BrowserRouter} from 'react-router-dom'
 
 function App() {
   const[state,setState] =useState('')
   let component
   
 
-  
+
   return (
     <div className='App'>
     <button onClick={()=>setState('about')} >About</button>
