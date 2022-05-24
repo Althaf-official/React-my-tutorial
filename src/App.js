@@ -1,19 +1,19 @@
 import About from "./Container/About"
 import Profile from "./Container/Profile"
 import {useState} from 'react'
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter as Router,Route} from 'react-router-dom'//route means when we click on something where should be it have to go we are defining thats called routing
 
 function App() {
   const[state,setState] =useState('')
-  let component
   
-
-
   return (
     <div className='App'>
     <button onClick={()=>setState('about')} >About</button>
     <button onClick={()=>setState('profile')}>Profile</button>
-    {component}
+    <Router>
+      
+    </Router>
+
     </div>
   )
 }
