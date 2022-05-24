@@ -15,7 +15,7 @@ function App() {
         <Link to='/profile'>Profile page</Link>
         <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/profile" element={()=><h1>hello</h1>} />
+          <Route path="/profile" element={<Profile/>} />
         </Routes>
       </Router>
 
