@@ -3,8 +3,8 @@ import Two from './Two'
 
 function One() {
   return (
-    <div>
-      <h1 className='two-box'>Layer two </h1>
+    <div style={{backgroundColor:'green',width:'500px'}}>
+      <h1 >Layer two </h1>
       <Two></Two>
     </div>
   )
