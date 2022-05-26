@@ -12,7 +12,7 @@ function App() {
         <button onClick={()=>navigate('/about')}>About me</button>
         <button onClick={()=>navigate('/profile')}>profile</button>
         <Routes>
-          <Route path="/about" element={<About />}/>
+          <Route path="/about" element={<About  data={state}/>}/>
           <Route path="/profile" element={<Profile data={state} />}/>
         </Routes>
     </div>
