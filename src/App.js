@@ -15,8 +15,8 @@ function App() {
 
         <Routes>
           <AppContext.Provider value={{data:state}}>
-          <Route path="/about" element={<About  data={state}/>}/>
-          <Route path="/profile" element={<Profile data={state} />}/>
+          <Route path="/about" element={<About  />}/>
+          <Route path="/profile" element={<Profile  />}/>
           </AppContext.Provider>
         </Routes>
     </div>

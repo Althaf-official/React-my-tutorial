@@ -1,9 +1,9 @@
 import React from 'react'
 import './about.css'
-function About(props) {
+function About() {
   return (
     <div className='about'>
-      <h1>About me {props.data}</h1>
+      <h1>About me</h1>
     </div>
   )
 }
