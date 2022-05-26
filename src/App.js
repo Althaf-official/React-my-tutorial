@@ -12,9 +12,12 @@ function App() {
     <div className='App'>
         <button onClick={()=>navigate('/about')}>About me</button>
         <button onClick={()=>navigate('/profile')}>profile</button>
+
         <Routes>
+          <AppContext.Provider>
           <Route path="/about" element={<About  data={state}/>}/>
           <Route path="/profile" element={<Profile data={state} />}/>
+          </AppContext.Provider>
         </Routes>
     </div>
   ) 
