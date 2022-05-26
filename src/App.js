@@ -14,7 +14,7 @@ function App() {
         <button onClick={()=>navigate('/profile')}>profile</button>
 
         <Routes>
-          <AppContext.Provider>
+          <AppContext.Provider value={{data:state}}>
           <Route path="/about" element={<About  data={state}/>}/>
           <Route path="/profile" element={<Profile data={state} />}/>
           </AppContext.Provider>
