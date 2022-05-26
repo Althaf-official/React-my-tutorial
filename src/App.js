@@ -13,12 +13,12 @@ function App() {
         <button onClick={()=>navigate('/about')}>About me</button>
         <button onClick={()=>navigate('/profile')}>profile</button>
 
+        <AppContext.Provider value={{data:state}}>
         <Routes>
-          <AppContext.Provider value={{data:state}}>
           <Route path="/about" element={<About  />}/>
           <Route path="/profile" element={<Profile  />}/>
-          </AppContext.Provider>
         </Routes>
+        </AppContext.Provider>
     </div>
   ) 
 }
