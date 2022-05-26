@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-
+import {AppContext} from '../AppContext'
 
 function Two(props) {
     const {} = useContext()
