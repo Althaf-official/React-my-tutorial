@@ -16,7 +16,7 @@ function App() {
           <Route path="/profile" element={<Profile data={state} />}/>
         </Routes>
     </div>
-  )
+  ) 
 }
 
 export default App 
