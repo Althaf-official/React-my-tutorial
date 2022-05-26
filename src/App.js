@@ -2,6 +2,7 @@ import About from "./Container/About"
 import Profile from "./Container/Profile"
 import { useState } from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom";
+import { AppContext } from "./AppContext";
 
 function App() {
   const [state, setState] = useState(10)
