@@ -5,7 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { AppContext } from "./AppContext";
 
 function App() {
-  const [state, setState] = useState(10)
+  const [state, setState] = useState(100000)
   const navigate =useNavigate()
 
   return (
