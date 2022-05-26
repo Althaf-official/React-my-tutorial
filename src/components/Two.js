@@ -1,13 +1,11 @@
 import React from 'react'
 
 
-function Two() {
+function Two(props) {
   return (
     <div style={{backgroundColor:'yellow',width:'200px'}}>
-      <h1>leyer two</h1>
-      <div >
-          <h1>hello this is two.js file with you</h1>
-      </div>
+      <h1>leyer two {props.data}</h1>
+      
     </div>
   )
 }
